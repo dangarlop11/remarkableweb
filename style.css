@@ -1,0 +1,136 @@
+:root {
+  --fondo: #000;
+  --texto: #fff;
+  --secundario: #bbbbbb;
+  --acento: #f9fbfc;
+  --maxw: 900px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.site-header {
+  width: 100%;
+  max-width: var(--maxw);
+  text-align: center;
+  border-bottom: 2px solid var(--acento);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.site-header h1 {
+  color: var(--acento);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: var(--secundario);
+  font-size: 1.1rem;
+}
+
+.topnav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topnav a {
+  color: var(--texto);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--acento);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background-color: var(--acento);
+  color: var(--fondo);
+}
+
+.content {
+  width: 100%;
+  max-width: var(--maxw);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section {
+  background-color: #111;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+h2 {
+  color: var(--acento);
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.specs li {
+  background-color: #1b1b1b;
+  color: var(--secundario);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+figcaption {
+  color: var(--secundario);
+  font-size: 0.9rem;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.site-footer {
+  width: 100%;
+  max-width: var(--maxw);
+  text-align: center;
+  color: var(--secundario);
+  border-top: 1px solid #222;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
